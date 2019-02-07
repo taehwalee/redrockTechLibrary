@@ -14,7 +14,7 @@ vSphere 6.0 부터 제공되는 VCenter Server Appliance는  내부 데이터 �
  - Relation : Table 객체를 이야기 합니다. 1개이상의 열들을 가지고 있으며, 행단위로 데이터가 저장됩니다.
  - Attribute : Table 객체를 이루는 Column(열)을 의미합니다. 다양한 Data type(Boolean, int, varchar 등)으로 생성시 선언할 수 있습니다.
  - Tuple : 데이터가 입력되는 단위 (오라클에서는 Row 에 해당) 
- - Page : Data가 저장되느 최소 단위 입니다. (오라클에서는 Data block에 해당) 8KB 크기로 고정이며, 한 Page내 Header 및 Tail외 실제 Tuple들이 Tail 영역 앞단부터 뒤에서 입력됩니다.
+ - Page : Data가 저장되 최소 단위 입니다. (오라클에서는 Data block에 해당) 8KB 크기로 고정이며, 한 Page내 Header 및 Tail외 실제 Tuple들이 Tail 영역 앞단부터 뒤에서 입력됩니다.
  - Tablespace : 오라클과 달리  Postgresql내에서는 Tablespace = OS의 특정 Directory 그자체로 보시면 됩니다. 별도의 Tablespace 미지정시 DB 생성시 정의된 Default tablespace 또는 pg_default Tablespace내 데이터 파일이 저장됩니다. 
  - Data file : MSSQL(.mdf, .ndf) 나 오라클(.dbf) 파일들과 달리 Postgresql에서는 Relation(=Table)자체가  데이터파일(실제로는 oid 이름으로 파일이 생성)이 됩니다. 용량이 커지면  파일명 뒤에 .1  .2 들의 넘버링이 붙어 분기되어 생성됩니다.
 
